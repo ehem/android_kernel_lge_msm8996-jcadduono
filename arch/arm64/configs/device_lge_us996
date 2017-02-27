@@ -43,3 +43,14 @@ CONFIG_SND_USE_TERT_MI2S=y
 CONFIG_VPNCLIENT_PROC_GID=1000
 CONFIG_VPNCLIENT_PROC_UID=1000
 CONFIG_VPNCLIENT_SECURITY=y
+
+#########################################################################
+# Fix kernel command-line (may or may not be important)			#
+#########################################################################
+CONFIG_CMDLINE_SEARCHREPLACE=y
+CONFIG_CMDLINE_SAR_VERIFY_GREEN=y
+CONFIG_CMDLINE_SAR_ENABLE0=n
+CONFIG_CMDLINE_SAR_ENABLE1=n
+CONFIG_CMDLINE_SAR_ENABLE2=y
+CONFIG_CMDLINE_SAR_SEARCH2=" slub_debug=FZPU "
+CONFIG_CMDLINE_SAR_REPLACE2=" "
